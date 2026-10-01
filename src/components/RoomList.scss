@@ -1,0 +1,108 @@
+.boxList{
+  display:  flex;
+height: 85vh;
+}
+.myRooms{
+  margin-top: 10px;
+  padding: 10px;
+display: flex;
+flex-direction: column;
+margin-right: 20px;
+border: 1px solid black;
+border-radius: 20px;
+
+}
+.box{
+
+display:flex;
+
+
+}
+
+.roomsBox {
+  display: flex;
+ flex-direction: column;
+  overflow-y: auto;
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+.roomsItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  margin-bottom: 6px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-color: #f9f9f9;
+
+  .roomName {
+    margin-right: 5px;
+    font-weight: 500;
+  }
+.inputRename{
+  margin-right: 5px;
+}
+  .roomActions {
+    display: flex;
+    gap: 6px;
+
+    .roomsButton {
+
+      border: none;
+      padding: 4px 8px;
+      border-radius: 20px;
+      cursor: pointer;
+
+      &.edit {
+        background-color: #4caf50;
+        color: white;
+
+      }
+
+      &.back {
+        background-color: #f44336;
+        color: white;
+      }
+
+      &:hover {
+        opacity: 0.8;
+      }
+        &:disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+    opacity: 1;
+  }
+    }
+  }
+}
+.questRooms{
+  display: flex;
+flex-direction: column;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid black;
+border-radius: 20px;
+}
+.roomsDelete{
+  color: red;
+  margin-left: 10px;
+  background-color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.roomsVisite{
+
+  background-color:white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.roomsVisite.active {
+  background:green;
+  color: black;
+}

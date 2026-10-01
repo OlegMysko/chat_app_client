@@ -1,0 +1,22 @@
+.buttonSend{
+   cursor: pointer;
+  line-height: 40px;
+text-align: center;
+  color: white;
+  background-color: #4219D0;;
+  height: 40px;
+  border: 1px solid black;
+border-radius: 10px;
+&--disabled{
+  background-color: #FFF;
+border: 1px solid #E2E6E9;
+  color: grey;
+   pointer-events: none;
+    cursor: default;
+}
+&:hover{
+  color: #4219D0;
+  background-color: #E2E6E9;
+  border: 1px solid  #4219D0;
+}
+}
